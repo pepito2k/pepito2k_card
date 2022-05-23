@@ -1,5 +1,6 @@
 import boxen from 'boxen';
 import chalk from 'chalk';
+import terminalLink from 'terminal-link';
 import data from './lib/data.js';
 
 const name = `${chalk.bold(data.name)}
@@ -15,7 +16,7 @@ const render = (args) => {
     output.push(boxen(name, { padding: 1, margin: 2 }));
 
     Object.keys(data.urls).forEach((key) => {
-      output.push(`${chalk.yellow(key)}: ${chalk.green(data.urls[key])}`);
+      output.push(terminalLink(chalk.yellow(key), data.urls[key]));
     });
   }
 
