@@ -1,6 +1,6 @@
 {
   "name": "pepito2k",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Contact information for pepito2k",
   "main": "index.js",
   "bin": "cli.js",
